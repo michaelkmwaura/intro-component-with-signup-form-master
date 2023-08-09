@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Outfit:wght@500&family=Overpass&family=Poppins&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background-image: url("./images/bg-intro-desktop.png");
+  background-color: hsl(0, 100%, 74%);
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+#mainDiv{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  margin: 7rem 0 0 0;
+}
+
+#mainText{
+  width: 45%;
+  margin: 0 0 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mainText h1{
+
+  font-weight: 700;
+  margin-bottom: 2rem;
+} 
+
+#mainForm{
+  width: 40%;
+  margin: 0 0 0 3rem;
+}
+
+#trial{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 1px 3px 5px 2px hsl(249, 10%, 26%);
+  margin-bottom: 1rem;
+}
+
+#whiteDiv{
+  background-color: white;
+  color: hsl(246, 25%, 77%);
+  padding: 2rem;
+  box-shadow: 1px 3px 5px 2px hsl(249, 10%, 26%);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input{
+  background-color: white;
+  color: hsl(249, 10%, 26%);
+  padding: 0.5rem 0 0.5rem 1rem;
+  border: 1px solid hsl(246, 25%, 77%);
+  font-family: inherit;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-weight: bolder;
+}
+
+#submit{
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  border-bottom: 3px solid hsl(154, 59%, 39%);
+  cursor: pointer;
+}
+
+#submit:hover{
+  background-color: hsl(154, 54%, 58%);
+}
+
+#submit:active{
+  background-color: hsl(154, 54%, 58%);
+}
+
+#mainForm p{
+  font-size: 10px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#link{
+  color: hsl(0, 100%, 74%);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 700px){
+  #mainDiv{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #whiteDiv{
+    padding: 1rem;
+    width: 100%;
+  }
+
+  #trial{
+    flex-wrap: wrap;
+    padding: 1rem 4rem 1rem 4rem;
+  }
+  #mainForm{
+    width: auto;
+    margin: 0 0 0 1rem;
+  }
+
+  #mainText{
+    width: auto;
+    margin: 0 0 0 1rem;
+  }
+}
